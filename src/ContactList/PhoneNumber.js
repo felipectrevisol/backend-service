@@ -1,10 +1,9 @@
-import PhoneNumeber from './PhoneNumber.js';
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from "../database_connection.js";
 
-class Contact extends Model {}
+class PhoneNumber extends Model {}
 
-Contact.init(
+PhoneNumber.init(
     {
         id: {
             allowNull: true,
@@ -12,11 +11,7 @@ Contact.init(
             autoIncrement: true,
             type: DataTypes.INTEGER,
         },
-        name: {
-            allowNull: true,
-            type: DataTypes.STRING,
-        },
-        lastName: {
+        number: {
             allowNull: true,
             type: DataTypes.STRING,
         },
@@ -31,9 +26,9 @@ Contact.init(
     },
     {
         sequelize,
-        modelName: 'Contact',
-        tableName: 'contact',
+        modelName: 'PhoneNumber',
+        tableName: 'phonenumber',
     }
 );
 
-export default Contact;
+export default PhoneNumber;

@@ -27,7 +27,7 @@ PhoneNumber.init(
     {
         sequelize,
         modelName: 'PhoneNumber',
-        tableName: 'phonenumber',
+        tableName: 'phone_numbers',
     }
 );
 

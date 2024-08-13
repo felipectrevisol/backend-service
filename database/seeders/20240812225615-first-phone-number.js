@@ -11,8 +11,8 @@ module.exports = {
             createdAt: new Date(),
             updatedAt: new Date(),
             ContactId:1
-          }
-          ,{
+          },
+          {
             id: 2,
             number: 5547974112300,
             createdAt: new Date(),

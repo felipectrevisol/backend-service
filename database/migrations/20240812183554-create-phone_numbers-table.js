@@ -8,6 +8,12 @@ module.exports = {
         {
           id: {
             allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+            type: DataTypes.INTEGER,
+          },
+          ContactId: {
+            allowNull: false,
             type: DataTypes.INTEGER,
           },
           number: {
@@ -28,9 +34,8 @@ module.exports = {
 
     await queryInterface.addConstraint("phone_numbers",
         {
-
           type: "foreign key",
-          fields: ["id"],
+          fields: ["ContactId"],
           name: "fk_contacts",
 
           references: {

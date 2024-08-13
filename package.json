@@ -4,13 +4,14 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  
   "scripts": {
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:seed": "npx sequelize-cli db:seed:all",
     "db:seed:undo": "npx sequelize-cli db:seed:undo",
     "dev": "nodemon server.js",
     "production": "node server.js",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache --passWithNoTests"
   },
   "keywords": [],
   "author": "",

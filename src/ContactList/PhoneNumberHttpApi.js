@@ -3,7 +3,7 @@ import PhoneNumber from "./PhoneNumber.js";
 
 const router = express.Router();
 {
-    router.get("/list", async (request, response) => {
+    router.get("/all", async (request, response) => {
         response.send(await PhoneNumber.findAll());
     });
 

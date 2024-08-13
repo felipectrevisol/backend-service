@@ -1,6 +1,6 @@
 # Backend Service
 
-> É um projeto de portifólio *muito* em desenvolvimento :)
+> É um projeto de portifólio (*muito*) em desenvolvimento :)
 
 ## API Url de Contatos:
 

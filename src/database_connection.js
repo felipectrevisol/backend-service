@@ -10,9 +10,8 @@ const openDatabaseConnection = async () => {
     {
         Contact.hasMany(PhoneNumber);
         PhoneNumber.belongsTo(Contact);
+        await sequelize.sync({ force: false });
     }
-
-    await sequelize.sync({ force: false });
 
     console.log("Database Connection Authenticated.");
 };

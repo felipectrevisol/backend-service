@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express';
-import contactHttpApi from './src/Contacts/ContactHttpApi.js';
 import { openDatabaseConnection } from "./src/database.js";
+import contactHttpApi from './src/Contacts/ContactHttpApi.js';
 import phoneNumberHttpApi from './src/Contacts/PhoneNumberHttpApi.js';
 
 (async () => await openDatabaseConnection())();

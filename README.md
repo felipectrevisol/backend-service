@@ -5,7 +5,7 @@
 
 ## Workaround
 
-> No diretório database estão os subdiretórios migrations e seeders e dentro de cada um dele tem um package.json para o uso exclusivo do cli do sequelize.
+> No diretório database estão os subdiretórios migrations e seeders e dentro de cada um dele tem um package.json para o uso exclusivo do cli do sequelize: porque por padrão o type é CommonJS.
 
 ## API Url de Contatos:
 

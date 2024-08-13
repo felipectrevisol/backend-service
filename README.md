@@ -1,6 +1,6 @@
 # Backend Service
 
-> É um projeto de portifólio (*muito*) em desenvolvimento :)  
+> É um projeto de portfólio (*muito*) em desenvolvimento :)  
 > E sim, eu sei, o .env e o sequelize.config.json foram "commitados" ;)
 
 ## Workaround

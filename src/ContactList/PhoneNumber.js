@@ -6,13 +6,12 @@ class PhoneNumber extends Model {}
 PhoneNumber.init(
     {
         id: {
-            allowNull: true,
-            primaryKey: true,
-            autoIncrement: true,
-            type: DataTypes.INTEGER,
+            allowNull: false,
+            type: DataTypes.INTEGER
         },
         number: {
             allowNull: true,
+            primaryKey: true,
             type: DataTypes.STRING,
         },
         createdAt: {
@@ -28,6 +27,7 @@ PhoneNumber.init(
         sequelize,
         modelName: 'PhoneNumber',
         tableName: 'phone_numbers',
+        freezeTableName: true
     }
 );
 

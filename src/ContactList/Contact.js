@@ -1,4 +1,4 @@
-import PhoneNumeber from './PhoneNumber.js';
+import PhoneNumber from './PhoneNumber.js';
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from "../database_connection.js";
 
@@ -32,7 +32,8 @@ Contact.init(
     {
         sequelize,
         modelName: 'Contact',
-        tableName: 'contact',
+        tableName: 'contacts',
+        freezeTableName: true
     }
 );
 

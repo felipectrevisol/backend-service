@@ -11,7 +11,8 @@ module.exports = {
             type: DataTypes.INTEGER,
           },
           number: {
-            allowNull: true,
+            allowNull: false,
+            primaryKey: true,
             type: DataTypes.STRING,
           },
           createdAt: {

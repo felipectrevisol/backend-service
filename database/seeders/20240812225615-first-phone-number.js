@@ -13,11 +13,11 @@ module.exports = {
             ContactId:1
           },
           {
-            id: 2,
+            id: 1,
             number: 5547974112300,
             createdAt: new Date(),
             updatedAt: new Date(),
-            ContactId:2
+            ContactId:1
           }
         ], {});
   },

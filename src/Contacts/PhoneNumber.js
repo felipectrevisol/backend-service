@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from "../database_connection.js";
+import { sequelize } from "../database.js";
 
 class PhoneNumber extends Model {}
 

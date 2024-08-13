@@ -12,7 +12,9 @@ const router = express.Router();
 
     router.get("/:id", async (request, response) => {
         const id = parseInt(request.params.id);
-        response.send(await Contact.findByPk(id));
+        response.send(await Contact.findByPk(id, {
+            include: PhoneNumber
+        }));
     });
 }
 

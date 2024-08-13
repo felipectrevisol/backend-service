@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
-import Contact from "./ContactList/Contact.js";
-import PhoneNumber from "./ContactList/PhoneNumber.js";
+import Contact from "./Contacts/Contact.js";
+import PhoneNumber from "./Contacts/PhoneNumber.js";
 
 const sequelize = new Sequelize(process.env.DATABASE_URL,
     { logging: false }

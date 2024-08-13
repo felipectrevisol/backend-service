@@ -1,4 +1,4 @@
-import { Sequelize } from 'sequelize';
+import {Sequelize} from 'sequelize';
 import Contact from "./Contacts/Contact.js";
 import PhoneNumber from "./Contacts/PhoneNumber.js";
 
@@ -11,10 +11,10 @@ const openDatabaseConnection = async () => {
     {
         Contact.hasMany(PhoneNumber);
         PhoneNumber.belongsTo(Contact);
-        await sequelize.sync({ force: false });
+        await sequelize.sync({force: false});
     }
 
     console.log("Database Connection Authenticated.");
 };
 
-export { sequelize, openDatabaseConnection };
+export {sequelize, openDatabaseConnection};

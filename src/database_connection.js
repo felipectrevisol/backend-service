@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize';
 import Contact from "./ContactList/Contact.js";
 import PhoneNumber from "./ContactList/PhoneNumber.js";
 const sequelize = new Sequelize('postgres://postgres:admin@localhost:5432/postgres', {
-    logging: process.env.SEQUENCE_LOGGING
+    logging: false
 });
 
 const openDatabaseConnection = async () => {

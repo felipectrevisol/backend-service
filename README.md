@@ -1,6 +1,7 @@
 # Backend Service
 
 > É um projeto de portifólio (*muito*) em desenvolvimento :)
+> E sim, eu sei, o .env e o sequelize.config.json foram "commitados" ;)
 
 ## API Url de Contatos:
 

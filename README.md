@@ -3,9 +3,9 @@
 > É um projeto de portfólio (*muito*) em desenvolvimento :)  
 > E sim, eu sei, o .env e o sequelize.config.json foram "commitados" ;)
 
-## Workaround
+## Limitações Contornadas
 
-> No diretório database estão os subdiretórios migrations e seeders e dentro de cada um dele tem um package.json para o uso exclusivo do cli do sequelize: porque por padrão deixei o type como CommonJS.
+> Por limitações do sequelize-cli, adicionei nos diretórios database/migrations e database/seeders o arquivo package.json com exclusiva configuração abaixo:
 ```
 {
   "type":"commonjs"

@@ -3,7 +3,7 @@
 > É um projeto de portfólio (*muito*) em desenvolvimento :)  
 > E sim, eu sei, o .env e o sequelize.config.json foram "commitados" ;)
 
-## Limitações Contornadas
+## Limitações que encontrei no Squelize-Cli
 
 > Por limitações do sequelize-cli, adicionei nos diretórios database/migrations e database/seeders o arquivo package.json com exclusiva configuração abaixo:
 ```

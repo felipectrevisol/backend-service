@@ -1,0 +1,68 @@
+openapi: 3.0.1
+info:
+    title: API de contatos.
+    description: Essa API traz funcionalidades para apresentar informações de contatos cadastrados.
+    version: 0.0.1
+    termsOfService: https://github.com/felipectrevisol/backend-service/blob/main/README.md
+    contact:
+        name: Felipe Canto Trevisol
+        email: contato.@exemplo.com
+        url: https://github.com/felipectrevisol
+    license:
+        name: GPLv3
+        url: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
+externalDocs:
+  description: GitHub README
+  url: https://github.com/felipectrevisol/backend-service/blob/main/README.md
+servers:
+  - url: http://localhost:3000/v1/
+    description: Ambiente Local
+paths:
+    /contact/all:
+        get:
+            summary: A lista de todos os contatos até agora cadastrados.
+            responses:
+                200:
+                    description: Secesso.
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        id:
+                                            type: integer
+                                            description: identificador do contato.
+                                        name:
+                                            type: string
+                                            description: Nome do contato.
+                                        lastName:
+                                            type: string
+                                            description: Sobrenome do contato.
+                                        createdAt:
+                                            type: string
+                                            description: Data que foi criado o registro.
+                                        updatedAt:
+                                            type: string
+                                            description: Data que da última alteração do registro.
+                                        PhoneNumbers:
+                                            type: array
+                                            items:
+                                                type: object
+                                                properties:
+                                                    id:
+                                                        type: integer
+                                                        description: identificador do telefone.
+                                                    number:
+                                                        type: string
+                                                        description: identificador do telefone.
+                                                    createdAt:
+                                                        type: string
+                                                        description: Data que foi criado o registro.
+                                                    updatedAt:
+                                                        type: string
+                                                        description: Data que da última alteração do registro.
+                                                    ContactId:
+                                                        type: integer
+                                                        description: identificador do contato.

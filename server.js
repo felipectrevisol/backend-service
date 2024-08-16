@@ -3,7 +3,7 @@ import 'dotenv/config'
 
 import contactHttpApi from './src/Contacts/ContactHttpApi.js';
 import phoneNumberHttpApi from './src/Contacts/PhoneNumberHttpApi.js';
-import { openDatabaseConnection } from "./src/database.js";
+import {openDatabaseConnection} from "./src/database.js";
 
 (async () => await openDatabaseConnection())();
 

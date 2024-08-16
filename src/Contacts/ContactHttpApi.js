@@ -1,9 +1,21 @@
 import express from "express";
 import Contact from "./Contact.js";
 import PhoneNumber from "./PhoneNumber.js";
+import swaggerUi from "swagger-ui-express";
+
+import path from "node:path";
+import YAML from 'yamljs';
 
 const router = express.Router();
 {
+    const apiDocumentation = YAML.load(path.resolve("src/Contacts", "./docs/contacts.api.yml"));
+    {
+        router.use('/contact/docs', swaggerUi.serve);
+        router.get("/contact/docs", swaggerUi.setup(apiDocumentation, {
+            encoding: 'utf8', flag: 'r'
+        }));
+    }
+
     router.get("/contact/all", async (request, response) => {
         response.send(await Contact.findAll({
             include: PhoneNumber
@@ -22,12 +34,12 @@ const router = express.Router();
         const phoneNumber = request.params.number.toString();
 
         response.send(await Contact.findOne({
-            where: { id: identifier },
-            include:[
+            where: {id: identifier},
+            include: [
                 {
                     required: true,
                     model: PhoneNumber,
-                    where: { number: phoneNumber }
+                    where: {number: phoneNumber}
                 }
             ]
         }));

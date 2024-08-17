@@ -16,7 +16,7 @@ externalDocs:
   url: https://github.com/felipectrevisol/backend-service/blob/main/README.md
 servers:
   - url: http://localhost:3000/v1/
-    description: Ambiente Local
+    description: Localhost
 paths:
     /contact/all:
         get:

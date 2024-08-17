@@ -14,10 +14,11 @@
 
 ## API Url de Contatos:
 
-```  
-http://localhost:3000/v1/contact/all  
-http://localhost:3000/v1/contact/1  
-http://localhost:3000/v1/contact/1/with/phone/5547974112300  
+```
+http://localhost:3000/v1/contact/docs
+http://localhost:3000/v1/contact/all
+http://localhost:3000/v1/contact/1
+http://localhost:3000/v1/contact/1/with/phone/5547974112300
 ```  
 
 ## API Url de Números de Telefones:

@@ -124,7 +124,7 @@ paths:
                                                     ContactId:
                                                         type: integer
                                                         description: identificador do contato.
-    /contact/{id}/with/phone/{phoneNumber}:
+    /contact/{id}/with/phone/{number}:
         get:
             summary: Um contato identificado por id e por número de telefone.
             parameters:
@@ -134,7 +134,7 @@ paths:
                   required: true
                   description: Id do contato.
                 - in: path
-                  name: phoneNumber
+                  name: number
                   type: string
                   required: true
                   description: Número do telefone do contato.
@@ -215,12 +215,12 @@ paths:
                                         ContactId:
                                             type: integer
                                             description: identificador do contato.
-    /phone/{phoneNumber}:
+    /phone/{number}:
         get:
             summary: Um número de telefone de um dos contatos até agora cadastrados.
             parameters:
                 - in: path
-                  name: phoneNumber
+                  name: number
                   type: string
                   required: true
                   description: Número de telefone do contato.

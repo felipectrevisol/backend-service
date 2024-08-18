@@ -21,6 +21,8 @@ paths:
     /contact/all:
         get:
             summary: A lista de todos os contatos até agora cadastrados.
+            tags:
+                - Contatos
             responses:
                 200:
                     description: Secesso.
@@ -75,6 +77,8 @@ paths:
                   type: integer
                   required: true
                   description: Id do contato.
+            tags:
+                - Contatos
             responses:
                 200:
                     description: Secesso.

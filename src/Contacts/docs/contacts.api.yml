@@ -124,3 +124,64 @@ paths:
                                                     ContactId:
                                                         type: integer
                                                         description: identificador do cont
+    /contact/{id}/with/phone/{phoneNumber}:
+        get:
+            summary: Um contato identificado por id e por número de telefone.
+            parameters:
+                - in: path
+                  name: id
+                  type: integer
+                  required: true
+                  description: Id do contato.
+                - in: path
+                  name: phoneNumber
+                  type: string
+                  required: true
+                  description: Número do telefone do contato.
+            tags:
+                - Contatos
+            responses:
+                200:
+                    description: Secesso.
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        id:
+                                            type: integer
+                                            description: identificador do contato.
+                                        name:
+                                            type: string
+                                            description: Nome do contato.
+                                        lastName:
+                                            type: string
+                                            description: Sobrenome do contato.
+                                        createdAt:
+                                            type: string
+                                            description: Data que foi criado o registro.
+                                        updatedAt:
+                                            type: string
+                                            description: Data que da última alteração do registro.
+                                        PhoneNumbers:
+                                            type: array
+                                            items:
+                                                type: object
+                                                properties:
+                                                    id:
+                                                        type: integer
+                                                        description: identificador do telefone.
+                                                    number:
+                                                        type: string
+                                                        description: identificador do telefone.
+                                                    createdAt:
+                                                        type: string
+                                                        description: Data que foi criado o registro.
+                                                    updatedAt:
+                                                        type: string
+                                                        description: Data que da última alteração do registro.
+                                                    ContactId:
+                                                        type: integer
+                                                        description: identificador do cont

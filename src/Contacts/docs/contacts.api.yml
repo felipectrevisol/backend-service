@@ -184,4 +184,70 @@ paths:
                                                         description: Data que da última alteração do registro.
                                                     ContactId:
                                                         type: integer
-                                                        description: identificador do contato.
+                                                        description: identificador do contato
+    /phone/all:
+        get:
+            summary: A lista de todos os telefones dos contatos até agora cadastrados.
+            tags:
+                - Número de Telefone
+            responses:
+                200:
+                    description: Secesso.
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        id:
+                                            type: integer
+                                            description: identificador do telefone.
+                                        number:
+                                            type: string
+                                            description: identificador do telefone.
+                                        createdAt:
+                                            type: string
+                                            description: Data que foi criado o registro.
+                                        updatedAt:
+                                            type: string
+                                            description: Data que da última alteração do registro.
+                                        ContactId:
+                                            type: integer
+                                            description: identificador do contato.
+    /phone/{phoneNumber}:
+        get:
+            summary: Um número de telefone de um dos contatos até agora cadastrados.
+            parameters:
+                - in: path
+                  name: phoneNumber
+                  type: string
+                  required: true
+                  description: Número de telefone do contato.
+            tags:
+                - Número de Telefone
+            responses:
+                200:
+                    description: Secesso.
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        id:
+                                            type: integer
+                                            description: identificador do telefone.
+                                        number:
+                                            type: string
+                                            description: identificador do telefone.
+                                        createdAt:
+                                            type: string
+                                            description: Data que foi criado o registro.
+                                        updatedAt:
+                                            type: string
+                                            description: Data que da última alteração do registro.
+                                        ContactId:
+                                            type: integer
+                                            description: identificador do contato

@@ -1,8 +1,8 @@
 import express from "express";
 import Contact from "./Contact.js";
 import PhoneNumber from "./PhoneNumber.js";
-import swaggerUi from "swagger-ui-express";
 
+import swaggerUi from "swagger-ui-express";
 import path from "node:path";
 import YAML from 'yamljs';
 

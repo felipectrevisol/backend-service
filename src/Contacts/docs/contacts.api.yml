@@ -5,15 +5,11 @@ info:
     version: 1.0.0
     termsOfService: https://github.com/felipectrevisol/backend-service/blob/main/README.md
     contact:
-        name: Felipe Canto Trevisol
-        email: contato.@exemplo.com
+        name: Author
         url: https://github.com/felipectrevisol
     license:
-        name: GPLv3
+        name: GPLv3 License
         url: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
-externalDocs:
-    description: GitHub README
-    url: https://github.com/felipectrevisol/backend-service/blob/main/README.md
 servers:
     - url: http://localhost:3000/v1/
       description: Localhost

@@ -74,7 +74,7 @@ paths:
                   name: id
                   type: integer
                   required: true
-                  description: Numeric ID of the user to get.
+                  description: Id do contato.
             responses:
                 200:
                     description: Secesso.

@@ -1,8 +1,8 @@
 openapi: 3.0.1
 info:
-    title: API de contatos.
+    title: API de Contatos.
     description: Essa API traz funcionalidades para apresentar informações de contatos cadastrados.
-    version: 0.0.1
+    version: 1.0.0
     termsOfService: https://github.com/felipectrevisol/backend-service/blob/main/README.md
     contact:
         name: Felipe Canto Trevisol
@@ -12,11 +12,11 @@ info:
         name: GPLv3
         url: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 externalDocs:
-  description: GitHub README
-  url: https://github.com/felipectrevisol/backend-service/blob/main/README.md
+    description: GitHub README
+    url: https://github.com/felipectrevisol/backend-service/blob/main/README.md
 servers:
-  - url: http://localhost:3000/v1/
-    description: Localhost
+    - url: http://localhost:3000/v1/
+      description: Localhost
 paths:
     /contact/all:
         get:
@@ -65,4 +65,58 @@ paths:
                                                         description: Data que da última alteração do registro.
                                                     ContactId:
                                                         type: integer
-                                                        description: identificador do contato.
+                                                        description: identificador do cont
+    /contact/{id}:
+        get:
+            summary: Um contato identificado por id.
+            parameters:
+                - in: path
+                  name: id
+                  type: integer
+                  required: true
+                  description: Numeric ID of the user to get.
+            responses:
+                200:
+                    description: Secesso.
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        id:
+                                            type: integer
+                                            description: identificador do contato.
+                                        name:
+                                            type: string
+                                            description: Nome do contato.
+                                        lastName:
+                                            type: string
+                                            description: Sobrenome do contato.
+                                        createdAt:
+                                            type: string
+                                            description: Data que foi criado o registro.
+                                        updatedAt:
+                                            type: string
+                                            description: Data que da última alteração do registro.
+                                        PhoneNumbers:
+                                            type: array
+                                            items:
+                                                type: object
+                                                properties:
+                                                    id:
+                                                        type: integer
+                                                        description: identificador do telefone.
+                                                    number:
+                                                        type: string
+                                                        description: identificador do telefone.
+                                                    createdAt:
+                                                        type: string
+                                                        description: Data que foi criado o registro.
+                                                    updatedAt:
+                                                        type: string
+                                                        description: Data que da última alteração do registro.
+                                                    ContactId:
+                                                        type: integer
+                                                        description: identificador do cont

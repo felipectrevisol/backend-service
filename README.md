@@ -7,20 +7,24 @@
 
 > Clonar o projeto git na maquina de preferências pessoal e executar os comandos abaixo. Tô melhorando esse comando ainda :)
 
+### Executando Testes.
 ```
-#Executando Testes
-
 npm run test
+```
 
+### Build das images e criação e execução dos containers.
+```
 docker compose up
+```
 
-#Na máquina local:
-
+### Na máquina local:
+```
 npm run db:migrate
 npm run db:seed
+```
 
-#Dentro do container docker:
-
+### Dentro do container docker:
+```
 npm run db:migrate --env docker
 npm run db:seed --env docker
 ```
@@ -34,16 +38,23 @@ npm run db:seed --env docker
 }
 ```
 
-## API Url de Contatos:
+## API Rest -URL´s
+
+### Swagger
 
 ```
 http://localhost:3000/v1/contact/docs
+```
+
+### API de Contatos:
+
+```
 http://localhost:3000/v1/contact/all
 http://localhost:3000/v1/contact/1
 http://localhost:3000/v1/contact/1/with/phone/5547974112300
 ```  
 
-## API Url de Números de Telefones:
+### API de Números de Telefones:
 
 ```  
 http://localhost:3000/v1/phone/all  

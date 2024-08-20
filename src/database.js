@@ -3,7 +3,7 @@ import Contact from "./Contacts/Contact.js";
 import PhoneNumber from "./Contacts/PhoneNumber.js";
 
 const sequelize = new Sequelize(process.env.DATABASE_URL,
-    { logging: false }
+    {logging: false}
 );
 
 const openDatabaseConnection = async () => {

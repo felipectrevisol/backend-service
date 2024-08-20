@@ -8,6 +8,10 @@
 > Clonar o projeto git na maquina de preferências pessoal e executar os comandos abaixo. Tô melhorando esse comando ainda :)
 
 ```
+#Executando Testes
+
+npm run test
+
 docker compose up
 
 #Na máquina local:

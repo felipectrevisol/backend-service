@@ -3,7 +3,14 @@
     "username": "postgres",
     "password": "admin",
     "database": "postgres",
-    "host": "127.0.0.1",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "docker": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "postgres",
+    "host": "backend-database",
     "dialect": "postgres"
   }
 }

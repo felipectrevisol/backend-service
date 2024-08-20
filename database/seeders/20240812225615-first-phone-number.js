@@ -6,12 +6,14 @@ module.exports = {
     await queryInterface.bulkInsert('phone_numbers',
         [
           {
+            id: 1,
             number: "5548974112300",
             createdAt: new Date(),
             updatedAt: new Date(),
             ContactId:1
           },
           {
+            id: 2,
             number: "5547974112300",
             createdAt: new Date(),
             updatedAt: new Date(),

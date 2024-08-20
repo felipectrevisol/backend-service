@@ -11,10 +11,12 @@
 docker compose up
 
 #Na máquina local:
+
 npm run db:migrate
 npm run db:seed
 
 #Dentro do container docker:
+
 npm run db:migrate --env docker
 npm run db:seed --env docker
 ```

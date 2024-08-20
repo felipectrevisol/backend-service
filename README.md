@@ -3,6 +3,22 @@
 > É um projeto de portfólio (*muito*) em desenvolvimento :)  
 > E sim, eu sei, o .env e o sequelize.config.json foram "commitados" ;)
 
+# Testando o Projeto
+
+> Clonar o projeto git na maquina de preferências pessoal e executar os comandos abaixo. Tô melhorando esse comando ainda :)
+
+```
+docker compose up
+
+#Na máquina local:
+npm run db:migrate
+npm run db:seed
+
+#Dentro do container docker:
+npm run db:migrate --env docker
+npm run db:seed --env docker
+```
+
 ## Limitações que encontrei no Squelize-Cli
 
 > Por limitações do sequelize-cli, adicionei nos diretórios database/migrations e database/seeders o arquivo package.json com exclusiva configuração abaixo:

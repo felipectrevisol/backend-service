@@ -11,6 +11,9 @@ info:
         name: GPLv3 License
         url: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 servers:
+    - url: https://backend-api-54oq.onrender.com/v1/
+      description: Render
+
     - url: http://localhost:3000/v1/
       description: Localhost
 paths:

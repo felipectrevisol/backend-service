@@ -1,0 +1,17 @@
+# Render Blueprint for NodeJs.
+services:
+    - type: web
+      plan: free
+      name: backend-api
+      runtime: node
+      repo: https://github.com/felipectrevisol/backend-service
+      buildCommand: "npm install"
+      startCommand: node server.js
+      envVars:
+          - key: DATABASE_URL
+            fromDatabase: 
+                name: backend-database
+                property: postgres://postgres:admin@backend-database:5432/postgres
+databases:
+    - name: backend-database
+      plan: free

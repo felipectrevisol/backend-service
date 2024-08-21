@@ -5,6 +5,13 @@
 
 # Testando o Projeto
 
+### No Render online:
+
+```
+https://backend-api-54oq.onrender.com/v1/contact/docs
+```
+
+### Na máquina local:
 > Clonar o projeto git na maquina de preferências pessoal e executar os comandos abaixo. Tô melhorando esse comando ainda :)
 
 ### Executando Testes.

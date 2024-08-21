@@ -8,10 +8,10 @@ services:
       buildCommand: "npm install"
       startCommand: node server.js
       envVars:
-          - key: DATABASE_URL
+          - key: postgres://postgres:admin@backend-database:5432/postgres
             fromDatabase: 
                 name: backend-database
-                property: postgres://postgres:admin@backend-database:5432/postgres
+                property: connectionString
 databases:
     - name: backend-database
       plan: free
